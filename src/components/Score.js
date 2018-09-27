@@ -1,15 +1,12 @@
 import React from "react";
 
-class Score extends React.Component {
-
-    render() {
-
-        return(
-            <div>
-
-            </div>
-        );
-    };
-}
+const Score = props => {
+   
+    return(
+        <div>
+            Score: 0 | Top Score: 0
+        </div>
+    );
+};
 
 export default Score;

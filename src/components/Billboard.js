@@ -1,15 +1,18 @@
 import React from "react";
+import "./Billboard.css"
 
-class Billboard extends React.Component {
+const Billboard = props => {
 
-    render() {
-
-        return(
-            <div>
-
-            </div>
-        );
-    };
+    return(
+        <div className="row">
+            <div className="col">
+                <div className="Billboard">
+                    
+                </div>
+            </div>       
+        </div>
+    );
 };
+
 
 export default Billboard;

@@ -1,15 +1,12 @@
 import React from "react";
 
-class ClickResponse extends React.Component {
+const ClickResponse = props => {
 
-    render() {
-
-        return(
-            <div>
-
-            </div>
-        );
-    };
+    return(
+        <div>
+            Click an Image to Begin!
+        </div>
+    )
 }
 
 export default ClickResponse;

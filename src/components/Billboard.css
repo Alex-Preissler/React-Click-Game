@@ -1,0 +1,5 @@
+.Billboard {
+    background-image: url(../images/billboardImage.jpg);
+    height: 500px;
+    background-size: contain;
+}
