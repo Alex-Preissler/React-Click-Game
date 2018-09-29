@@ -4,7 +4,7 @@ const Score = props => {
    
     return(
         <div>
-            Score: 0 | Top Score: 0
+            Score: {props.score} | Top Score: {props.highestScore}
         </div>
     );
 };

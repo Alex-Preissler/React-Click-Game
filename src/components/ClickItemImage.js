@@ -50,22 +50,14 @@ const images = [
     }
 ]
 
-const ClickItems = props => {
+
+const ClickItemImage = images.map(image => {
     
     return(
-        <div>
-            <div className="row">
-                {images.map(image => {
-                    console.log(image);
-                    return(
-                        <div key={image.key} className="col-md-3">
-                            <button className="btn btn-lg btn-default" key={image.key}></button>
-                        </div>
-                    );             
-                })}
-            </div>
+        <div className="col-md-3">
+            <button value={image.key}></button>
         </div>
-    );
-};
+    );      
+});
 
-export default ClickItems;
+export default ClickItemImage;

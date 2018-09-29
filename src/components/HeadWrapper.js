@@ -3,9 +3,7 @@ import ClickResponse from "./ClickResponse";
 import Score from "./Score";
 import "./HeadWrapper.css";
 
-class headWrapper extends React.Component {
-
-    render() {
+const HeadWrapper = props => {
 
         return(
             <div className="row headWrapper">
@@ -13,14 +11,14 @@ class headWrapper extends React.Component {
                     <a href="/">Clicky-Game</a>
                 </div>
                 <div className="col-md-4 response">
-                    <ClickResponse></ClickResponse>
+                    <ClickResponse correct={props.correct} score={props.score} highestScore={props.highestScore}></ClickResponse>
                 </div>
                 <div className="col-md-4 score">
-                    <Score></Score>
+                    <Score score={props.score} highestScore={props.highestScore}></Score>
                 </div>
             </div>
         );
     };
-};
 
-export default headWrapper;
+
+export default HeadWrapper;
